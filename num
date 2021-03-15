@@ -1,0 +1,16 @@
+#chapter 5
+endTotal = 0
+count = 0 
+average = 0
+while True:
+    userNum = input("Enter a number: ")
+    if userNum == "done":
+        break
+    try:
+      endTotal += int(userNum)
+      count += 1
+      average = endTotal/count
+    except: 
+      print("You did not enter a number, please try again!")
+    continue
+print("The numbers you've entered totals to: " + str(endTotal) + "\nThe total amount of numbers you've entered is: " + str(count) + "\nYour total average was: " + str(average))
